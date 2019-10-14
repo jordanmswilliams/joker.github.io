@@ -52,7 +52,7 @@ p {
   grid-area: 1 / 1 / 1 / 12;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: black;
+  /*background-color: black;*/
   height: 6vh;
   /*grid-area: navbar;*/
 }
@@ -78,34 +78,39 @@ p {
 .hero .date {
   grid-area: 2 / 3;
   z-index: 1;
+  font-size: 3rem;
 }
 
 .hero .quote_1 {
   grid-area: 3 / 3  / 3 / 5;
   z-index: 1;
+  font-size: 6rem;
 }
 
 .hero .quote_2 {
   grid-area: 4 / 3  / 4 / 5;
   z-index: 1;
+  font-size: 6rem;
 }
 
 .button {
-  grid-area: 5 / 3;
+  grid-area: 5 / 3 / 5 / 5;
   background-color: #A3641F;
   border: none;
   color: #D3D1A5;
-  padding: 15px 32px;
+  padding: 1.5rem 3.2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.6rem;
-  margin: 4px 2px;
+  font-size: 1.8rem;
+  margin: 2rem 2px;
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  font-family: 'Cabin', sans-serif;
+  max-width: 30rem;
 }
 
 .button:hover {
@@ -189,12 +194,12 @@ body {
   font-weight:normal;
 }
 
-.container {
+/*.container {
 
 max-width:940px;
 margin:0 auto;
 
-}
+}*/
 
 #testimonials {
   grid-area: 1 / 1 / 1 / 6;
@@ -203,9 +208,21 @@ margin:0 auto;
   /*width:940px;*/
 }
 
+@media (min-width: 768px) {
+  #testimonials {
+    grid-area: 1 / 1 / 1 / 3;
+  }
+}
+
 .process .joker_trailer {
   grid-area: 2 / 1 / 2 / 6;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .process .joker_trailer {
+    grid-area: 1 / 3 / 1 / 6;
+  }
 }
 
 .process .synopsis {
@@ -250,25 +267,15 @@ margin:0 auto;
 .process .instagram {
   grid-area: 5 / 2 / 8 / 4;
 }
-/*
+
 @media (min-width: 768px) {
   body {
-    grid-template-columns: 2fr 8fr 2fr;
-    /*grid-template-areas:
-    "navbar navbar navbar"
-    ". hero ."
-    "process process process";*/
-    /*margin: 200px;
+
   }
 }
 
 @media (min-width: 992px) {
   body {
-    grid-template-columns: 2fr 8fr 2fr;
-    /*grid-template-areas:
-    "navbar navbar navbar"
-    ". hero ."
-    "process process process";*/
-    /*margin: 200px;
+
   }
 }
