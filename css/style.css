@@ -152,7 +152,7 @@ body {
   text-align: center;
   opacity: 0;
   z-index: 0;
-  transition: opacity 0.5s ease-out 0s, transform 0.5s ease-in 0s;
+  transition: opacity .5s ease-out 0s, transform 5s ease-in 0s;
 }
 
 /* IE < 10 fallback */
@@ -172,10 +172,10 @@ body {
 }
 .cust-quotes blockquote p{
   font-size:4rem;
-  font-weight: 600;
-  font-style:italic;
+  font-weight: 800;
+  /*font-style:italic;*/
   color:#8A2700;
-  line-height: 30px;
+  line-height: 4rem;
   margin-bottom: 10px;
 }
 .cust-quotes blockquote p:before {
